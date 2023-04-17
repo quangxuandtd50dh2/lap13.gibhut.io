@@ -1,0 +1,15 @@
+body::before {
+  display: block;
+  content: "";
+  height: 60px;
+}
+/* Tôi muốn rằng đối với các màn hình trung bình trở lên
+thì nhóm input sẽ giảm nửa kích thước. */
+/* Nhớ rằng điểm giới hạn trung là 768 pixel.
+Tức là, cứ vượt quá 768 pixel thì lớp news-input
+do ta tùy chỉnh sẽ được thiết lập chiều rộng là 50%. */
+@media (min-width: 768px) {
+  .new-input {
+    width: 50%;
+  }
+}
